@@ -6,7 +6,7 @@
             </button>
         </ion-buttons>
         <ion-title data-comp-id="title.1">
-            <div data-comp-id="text.17" ion-text="">My Approvals</div>
+            <div data-comp-id="text.1" ion-text="">My Approvals</div>
         </ion-title>
         <ion-buttons data-comp-id="buttons.2" end=""></ion-buttons>
     </ion-navbar>
@@ -41,7 +41,7 @@
                             <img [src]="item.salesforce.imagePath" data-comp-id="img.1" style="width: 50px;">
                         </ion-col>
                         <ion-col data-comp-id="column.2" style="text-align: right; padding: 5px 0px;">
-                            <div color="primary" data-comp-id="text.1" ion-text="" style="font-size: 24px;">
+                            <div color="primary" data-comp-id="text.2" ion-text="" style="font-size: 24px;">
                                 <span style="font-size: 16px; margin-right: 4px">{{item.salesforce.dataPrefix}}</span>{{item.salesforce.amount}}</div>
                         </ion-col>
                         <ion-col *ngIf="item.isNew" data-comp-id="column.3"
@@ -51,15 +51,15 @@
                     </ion-row>
                     <ion-row data-comp-id="row.2" style="padding: 0 8px 0 8px;">
                         <ion-col data-comp-id="column.4">
-                            <div [innerHTML]="item.salesforce.vendor" data-comp-id="text.2" ion-text=""
+                            <div [innerHTML]="item.salesforce.vendor" data-comp-id="text.3" ion-text=""
                                 style="line-height: 24px;"></div>
-                            <div [innerHTML]="item.salesforce.date" color="coal" data-comp-id="text.3"
+                            <div [innerHTML]="item.salesforce.date" color="coal" data-comp-id="text.4"
                                 ion-text="" style="font-size: 16px;"></div>
                         </ion-col>
                     </ion-row>
                     <ion-row data-comp-id="row.3" style="padding: 2px 8px 4px 8px;">
                         <ion-col data-comp-id="column.5">
-                            <div [innerHTML]="item.salesforce.employee" color="dark" data-comp-id="text.4"
+                            <div [innerHTML]="item.salesforce.employee" color="dark" data-comp-id="text.5"
                                 ion-text="" style="font-size: 16px;"></div>
                         </ion-col>
                     </ion-row>
@@ -87,7 +87,8 @@
                 <ion-row *ngIf="item.resolved && item.approved" class="row-light"
                     data-comp-id="row.5" style="padding: 0 8px 0 8px;">
                     <ion-col data-comp-id="column.8">
-                        <a block="" color="good" data-comp-id="button.4" ion-button="" small="">
+                        <a block="" color="highlight" data-comp-id="button.4" ion-button="" small=""
+                            style="">
                             <ion-icon class="ion-ios-checkmark-circle"></ion-icon>
                             <span ion-text="">Approved</span>
                         </a>
@@ -112,7 +113,7 @@
                             <img [src]="item.sap.imagePath" data-comp-id="img.2" style="width: 50px;">
                         </ion-col>
                         <ion-col data-comp-id="column.11" style="text-align: right; padding: 5px 0px;">
-                            <div color="primary" data-comp-id="text.5" ion-text="" style="font-size: 24px;">
+                            <div color="primary" data-comp-id="text.6" ion-text="" style="font-size: 24px;">
                                 <span style="font-size: 16px; margin-right: 4px">{{item.sap.dataPrefix}}</span>{{item.sap.amount}}</div>
                         </ion-col>
                         <ion-col *ngIf="item.isNew" data-comp-id="column.12"
@@ -122,15 +123,15 @@
                     </ion-row>
                     <ion-row data-comp-id="row.8" style="padding: 0 8px 0 8px;">
                         <ion-col data-comp-id="column.13">
-                            <div [innerHTML]="item.sap.expenseItem" data-comp-id="text.6" ion-text=""
+                            <div [innerHTML]="item.sap.expenseItem" data-comp-id="text.7" ion-text=""
                                 style="line-height: 24px;"></div>
-                            <div [innerHTML]="item.sap.date" color="coal" data-comp-id="text.7" ion-text=""
+                            <div [innerHTML]="item.sap.date" color="coal" data-comp-id="text.8" ion-text=""
                                 style="font-size: 16px;"></div>
                         </ion-col>
                     </ion-row>
                     <ion-row data-comp-id="row.9" style="padding: 2px 8px 4px 8px;">
                         <ion-col data-comp-id="column.14">
-                            <div [innerHTML]="item.sap.employee" color="dark" data-comp-id="text.8"
+                            <div [innerHTML]="item.sap.employee" color="dark" data-comp-id="text.9"
                                 ion-text="" style="font-size: 16px;"></div>
                         </ion-col>
                     </ion-row>
@@ -183,7 +184,7 @@
                             <img [src]="item.expensify.imagePath" data-comp-id="img.3" style="width: 50px;">
                         </ion-col>
                         <ion-col data-comp-id="column.20" style="text-align: right; padding: 5px 0px;">
-                            <div color="primary" data-comp-id="text.9" ion-text="" style="font-size: 24px;">
+                            <div color="primary" data-comp-id="text.10" ion-text="" style="font-size: 24px;">
                                 <span style="font-size: 16px; margin-right: 4px">{{item.expensify.dataPrefix}}</span>{{item.expensify.amount}}</div>
                         </ion-col>
                         <ion-col *ngIf="item.isNew" data-comp-id="column.21"
@@ -193,15 +194,15 @@
                     </ion-row>
                     <ion-row data-comp-id="row.14" style="padding: 0 8px 0 8px;">
                         <ion-col data-comp-id="column.22">
-                            <div [innerHTML]="item.expensify.expenseItem" data-comp-id="text.10" ion-text=""
+                            <div [innerHTML]="item.expensify.expenseItem" data-comp-id="text.11" ion-text=""
                                 style="line-height: 24px;"></div>
-                            <div [innerHTML]="item.expensify.date" color="coal" data-comp-id="text.11"
+                            <div [innerHTML]="item.expensify.date" color="coal" data-comp-id="text.12"
                                 ion-text="" style="font-size: 16px;"></div>
                         </ion-col>
                     </ion-row>
                     <ion-row data-comp-id="row.15" style="padding: 2px 8px 4px 8px;">
                         <ion-col data-comp-id="column.23">
-                            <div [innerHTML]="item.expensify.employee" color="dark" data-comp-id="text.12"
+                            <div [innerHTML]="item.expensify.employee" color="dark" data-comp-id="text.13"
                                 ion-text="" style="font-size: 16px;"></div>
                         </ion-col>
                     </ion-row>
@@ -254,7 +255,7 @@
                             <img [src]="item.peoplesoft.imagePath" data-comp-id="img.4" style="width: 50px;">
                         </ion-col>
                         <ion-col data-comp-id="column.29" style="text-align: right; padding: 5px 0px;">
-                            <div color="primary" data-comp-id="text.13" ion-text="" style="font-size: 24px;">
+                            <div color="primary" data-comp-id="text.14" ion-text="" style="font-size: 24px;">
                                 <span style="font-size: 16px; margin-right: 4px">{{item.peoplesoft.dataPrefix}}</span>{{item.peoplesoft.amount}}</div>
                         </ion-col>
                         <ion-col *ngIf="item.isNew" data-comp-id="column.30"
@@ -264,15 +265,15 @@
                     </ion-row>
                     <ion-row data-comp-id="row.20" style="padding: 0 8px 0 8px;">
                         <ion-col data-comp-id="column.31">
-                            <div [innerHTML]="item.peoplesoft.project" data-comp-id="text.14" ion-text=""
+                            <div [innerHTML]="item.peoplesoft.project" data-comp-id="text.15" ion-text=""
                                 style="line-height: 24px;"></div>
-                            <div [innerHTML]="item.peoplesoft.dates" color="coal" data-comp-id="text.15"
+                            <div [innerHTML]="item.peoplesoft.dates" color="coal" data-comp-id="text.16"
                                 ion-text="" style="font-size: 16px;"></div>
                         </ion-col>
                     </ion-row>
                     <ion-row data-comp-id="row.21" style="padding: 2px 8px 4px 8px;">
                         <ion-col data-comp-id="column.32">
-                            <div [innerHTML]="item.peoplesoft.employee" color="dark" data-comp-id="text.16"
+                            <div [innerHTML]="item.peoplesoft.employee" color="dark" data-comp-id="text.17"
                                 ion-text="" style="font-size: 16px;"></div>
                         </ion-col>
                     </ion-row>
@@ -319,6 +320,7 @@
         </ion-card>
     </ion-list>
     <touchid-save [authRequest]="appService ? appService.getAuthRequest() : null"
-        data-comp-id="touchid-save.1" message="Would you like to use {{getBiometricAuthType()}} to login?"
+        data-comp-id="touchid-save.1"
+        message="Would you like to use {{getBiometricAuthType()}} to login?"
         title="{{getBiometricAuthType()}} Available"></touchid-save>
 </ion-content>
